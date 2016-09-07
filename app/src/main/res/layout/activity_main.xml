@@ -309,14 +309,14 @@
                 <Space
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight=".85" />
 
                 <ToggleButton
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="Playpause"
                     android:id="@+id/PlayPauseButton"
-                    android:layout_weight="1.5"
+                    android:layout_weight="1.2"
                     android:layout_gravity="center"
                     android:textOff="Play"
                     android:textOn="Pause"
@@ -326,7 +326,7 @@
                 <Space
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight=".85" />
 
                 <Button
                     android:layout_width="0dp"
@@ -341,7 +341,7 @@
                 <Space
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight=".85" />
 
                 <Button
                     android:layout_width="0dp"
@@ -356,14 +356,14 @@
                 <Space
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight=".85" />
 
                 <Button
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="Forward"
                     android:id="@+id/forwardButton"
-                    android:layout_weight="1.3"
+                    android:layout_weight="1.8"
                     android:layout_gravity="center"
                     android:textSize="25dp"
                     android:background="#18eed9" />
@@ -371,14 +371,14 @@
                 <Space
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight=".85" />
 
                 <Button
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="Replay"
                     android:id="@+id/replayButton"
-                    android:layout_weight="1"
+                    android:layout_weight="1.6"
                     android:layout_gravity="center"
                     android:textSize="25dp"
                     android:background="#18eed9" />
@@ -386,7 +386,7 @@
                 <Space
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight=".85" />
 
                 <Button
                     android:layout_width="0dp"
@@ -401,7 +401,7 @@
                 <Space
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight=".85" />
             </LinearLayout>
 
             <Space
