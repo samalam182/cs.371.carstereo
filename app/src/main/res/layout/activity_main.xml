@@ -1,16 +1,414 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.dewhitt17.carstereo.MainActivity">
+    tools:context="com.example.dewhitt17.carstereo.MainActivity"
+    android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
-</RelativeLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.33"
+        android:background="#000000">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="#000000">
+
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Power"
+                android:id="@+id/Powerbutton"
+                android:background="#e61d1d"
+                android:textColor="#ffffff"
+                android:textOn="ON"
+                android:textOff="OFF"
+                android:textSize="40dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/volbar"
+                android:background="#29e61f"
+                android:progressBackgroundTint="#ba2828"
+                android:max="100"
+                android:progressTint="#1158f1"
+                />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vol"
+                android:id="@+id/volDisp"
+                android:layout_gravity="center"
+                android:textColor="#bfbfbf"
+                android:textSize="70dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.33"
+        android:background="#000000" >
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FM Display Box"
+            android:id="@+id/FMDisp"
+            android:layout_gravity="center_vertical"
+            android:textSize="70dp"
+            android:textColor="#bc1caf" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.33"
+        android:background="#000000" >
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ToggleButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="AMFMTog"
+            android:id="@+id/AMFMTog"
+            android:layout_weight="1.5"
+            android:layout_gravity="center"
+            android:textOff="AM"
+            android:textOn="FM"
+            android:textSize="25dp"
+            android:background="#1c29ba" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:id="@+id/preset1"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:textSize="25dp"
+            android:background="#21abea" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:id="@+id/preset2"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:textSize="25dp"
+            android:background="#21abea" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:id="@+id/preset3"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:textSize="25dp"
+            android:background="#21abea" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:id="@+id/preset4"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:textSize="25dp"
+            android:background="#21abea" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:id="@+id/preset5"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:textSize="25dp"
+            android:background="#21abea" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="6"
+            android:id="@+id/preset6"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:textSize="25dp"
+            android:background="#21abea" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="&lt;"
+            android:id="@+id/seekBack"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:textSize="30dp"
+            android:background="#24ea7a" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=">"
+            android:id="@+id/seekForward"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:textSize="30dp"
+            android:background="#24ea7a" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#838383">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                android:id="@+id/textView"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight=".25"
+                android:textSize="25dp"
+                android:textColor="#000000"
+                android:background="#000000" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".5" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ToggleButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Playpause"
+                    android:id="@+id/PlayPauseButton"
+                    android:layout_weight="1.5"
+                    android:layout_gravity="center"
+                    android:textOff="Play"
+                    android:textOn="Pause"
+                    android:textSize="25dp"
+                    android:background="#ff011e" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Stop"
+                    android:id="@+id/stopButton"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:textSize="25dp"
+                    android:background="#247ba3" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Back"
+                    android:id="@+id/backButton"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:textSize="25dp"
+                    android:background="#18eed9" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Forward"
+                    android:id="@+id/forwardButton"
+                    android:layout_weight="1.3"
+                    android:layout_gravity="center"
+                    android:textSize="25dp"
+                    android:background="#18eed9" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Replay"
+                    android:id="@+id/replayButton"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:textSize="25dp"
+                    android:background="#18eed9" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Eject"
+                    android:id="@+id/ejectButton"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:textSize="25dp"
+                    android:background="#18eed9" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".5" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
