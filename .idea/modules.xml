@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CarStereo.iml" filepath="$PROJECT_DIR$/CarStereo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cs.371.carstereo.iml" filepath="$PROJECT_DIR$/cs.371.carstereo.iml" />
     </modules>
   </component>
 </project>

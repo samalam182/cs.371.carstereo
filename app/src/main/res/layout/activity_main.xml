@@ -31,7 +31,9 @@
                 android:textColor="#ffffff"
                 android:textOn="ON"
                 android:textOff="OFF"
-                android:textSize="40dp" />
+                android:textSize="40dp"
+                android:onClick="onPowerClick"
+                android:checked="false" />
         </LinearLayout>
 
         <LinearLayout
