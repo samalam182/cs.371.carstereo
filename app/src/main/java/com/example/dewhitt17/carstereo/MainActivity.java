@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public int[] fmPreset = {909, 929, 949, 969, 989, 1009};
     public int[] amPreset = {550, 600, 650, 700, 750, 800};
 
-    public Vibrator v = (Vibrator) this.context.getSystemService(Context.VIBRATOR_SERVICE);
+    Vibrator v;
 
 
     @Override
@@ -85,6 +85,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         six = (Button) findViewById(R.id.preset6);
         six.setOnClickListener(this);
         six.setOnLongClickListener(this);
+
+        v = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
     }
 
 
@@ -230,9 +232,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if(view.getId() == R.id.preset1){
             if(AMFM.isChecked()  && power.isChecked()){
                 fmPreset[0] = fmStation;
+                v.vibrate(500);
             }
             else if(power.isChecked()) {
                 amPreset[0] = amStation;
+                v.vibrate(500);
             }
 
         }
@@ -240,45 +244,55 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if(view.getId() == R.id.preset2){
             if(AMFM.isChecked()  && power.isChecked()){
                 fmPreset[1] = fmStation;
+                v.vibrate(500);
             }
             else if(power.isChecked()) {
                 amPreset[1] = amStation;
+                v.vibrate(500);
             }
         }
 
         if(view.getId() == R.id.preset3){
             if(AMFM.isChecked()  && power.isChecked()){
                 fmPreset[2] = fmStation;
+                v.vibrate(500);
             }
             else if(power.isChecked()) {
                 amPreset[2] = amStation;
+                v.vibrate(500);
             }
         }
 
         if(view.getId() == R.id.preset4){
             if(AMFM.isChecked()  && power.isChecked()){
                 fmPreset[3] = fmStation;
+                v.vibrate(500);
             }
             else if(power.isChecked()) {
                 amPreset[3] = amStation;
+                v.vibrate(500);
             }
         }
 
         if(view.getId() == R.id.preset5){
             if(AMFM.isChecked()  && power.isChecked()){
                 fmPreset[4] = fmStation;
+                v.vibrate(500);
             }
             else if(power.isChecked()) {
                 amPreset[4] = amStation;
+                v.vibrate(500);
             }
         }
 
         if(view.getId() == R.id.preset6){
             if(AMFM.isChecked()  && power.isChecked()){
                 fmPreset[5] = fmStation;
+                v.vibrate(500);
             }
             else if(power.isChecked()) {
                 amPreset[5] = amStation;
+                v.vibrate(500);
             }
         }
         return false;
